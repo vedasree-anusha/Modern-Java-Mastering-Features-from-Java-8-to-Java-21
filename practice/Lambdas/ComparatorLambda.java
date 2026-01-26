@@ -47,7 +47,7 @@ public class ComparatorLambda {
         Predicate<Integer> isEven = (number) -> number % 2 == 0;
         List<Integer> evenNumbers = new ArrayList<>();
         Predicate<String> p1 = (s) -> s.length()>5;
-        Predicate<String> p2 = (s) -> s.contains('a')
+        Predicate<String> p2 = (s) -> s.contains('a');
         evenNumbers = numbers.stream().filter(isEven).collect(Collectors.toList());
         
 
